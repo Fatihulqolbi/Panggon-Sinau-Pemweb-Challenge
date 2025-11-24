@@ -1,0 +1,38 @@
+{
+  "name": "panggon-sinau",
+  "version": "1.0.0",
+  "description": "Platform produktivitas dengan Pomodoro Timer dan Game Catur",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "eslint .",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@radix-ui/react-checkbox": "1.1.3",
+    "@radix-ui/react-label": "2.1.1",
+    "@radix-ui/react-progress": "1.1.1",
+    "@radix-ui/react-slot": "1.1.1",
+    "@radix-ui/react-tabs": "1.1.2",
+    "@vercel/analytics": "1.3.1",
+    "autoprefixer": "^10.4.20",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.454.0",
+    "next": "15.2.4",
+    "next-themes": "^0.4.6",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  }
+}

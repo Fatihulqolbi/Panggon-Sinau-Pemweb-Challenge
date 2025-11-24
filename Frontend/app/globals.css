@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --background: 150 30% 95%;
+    --foreground: 220 40% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 20%;
+    --primary: 174 44% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 150 30% 95%;
+    --secondary-foreground: 220 40% 20%;
+    --muted: 150 20% 96%;
+    --muted-foreground: 220 15% 50%;
+    --accent: 206 33% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 150 20% 85%;
+    --input: 150 20% 85%;
+    --ring: 174 44% 56%;
+    --chart-1: 152 51% 82%;
+    --chart-2: 174 44% 56%;
+    --chart-3: 206 33% 58%;
+    --chart-4: 220 16% 36%;
+    --chart-5: 150 30% 70%;
+    --radius: 0.75rem;
+    --sidebar-background: 150 30% 98%;
+    --sidebar-foreground: 220 40% 25%;
+    --sidebar-primary: 174 44% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 30% 95%;
+    --sidebar-accent-foreground: 220 40% 25%;
+    --sidebar-border: 150 20% 90%;
+    --sidebar-ring: 174 44% 56%;
+  }
+  .dark {
+    --background: 220 30% 8%;
+    --foreground: 150 20% 98%;
+    --card: 220 25% 12%;
+    --card-foreground: 150 20% 98%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 150 20% 98%;
+    --primary: 174 44% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 25% 18%;
+    --secondary-foreground: 150 20% 98%;
+    --muted: 220 25% 18%;
+    --muted-foreground: 150 15% 65%;
+    --accent: 206 33% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 25% 22%;
+    --input: 220 25% 22%;
+    --ring: 174 44% 56%;
+    --chart-1: 152 51% 82%;
+    --chart-2: 174 44% 56%;
+    --chart-3: 206 33% 58%;
+    --chart-4: 220 16% 36%;
+    --chart-5: 150 30% 50%;
+    --sidebar-background: 220 30% 10%;
+    --sidebar-foreground: 150 20% 95%;
+    --sidebar-primary: 174 44% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 18%;
+    --sidebar-accent-foreground: 150 20% 95%;
+    --sidebar-border: 220 25% 20%;
+    --sidebar-ring: 174 44% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations for Panggon Sinau */
+@layer components {
+  .timer-progress {
+    transition: stroke-dashoffset 1s linear;
+    transform-origin: center;
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(79, 183, 179, 0.2);
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(79, 183, 179, 0.1), 0 10px 10px -5px rgba(79, 183, 179, 0.04);
+  }
+
+  .animation-delay-150 {
+    animation-delay: 150ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+}
