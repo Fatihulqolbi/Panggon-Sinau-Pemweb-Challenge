@@ -11,8 +11,11 @@ interface GameControlsProps {
 export default function GameControls({ onReset, gameStatus }: GameControlsProps) {
   return (
     <div className="mt-4 flex flex-col items-center gap-4">
-      <Button onClick={onReset} className="flex items-center gap-2 bg-[#4FB7B3] hover:bg-[#31326F] dark:bg-[#4FB7B3] dark:hover:bg-[#6379AB]">
-        <RefreshCw className="h-4 w-4" />
+      <Button 
+        onClick={onReset}
+        className="bg-[#4FB7B3] hover:bg-[#31326F] dark:bg-[#4FB7B3] dark:hover:bg-[#6379AB]"
+      >
+        <RefreshCw className="h-4 w-4 mr-2" />
         New Game
       </Button>
 

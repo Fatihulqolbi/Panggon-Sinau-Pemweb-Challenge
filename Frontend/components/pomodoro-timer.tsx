@@ -16,20 +16,20 @@ export function PomodoroTimer() {
   };
 
   return (
-    <Card className="bg-white dark:bg-gray-800 border-2 border-teal-200 dark:border-gray-700 shadow-xl">
-      <CardContent className="p-8 dark:bg-gray-800">
+    <Card className="bg-white/90 dark:bg-slate-900/70 backdrop-blur-md border-2 border-purple-300/40 dark:border-purple-700/40 shadow-xl hover:shadow-2xl transition-all duration-300">
+      <CardContent className="p-8">
         <div className="text-center space-y-6">
           <div>
-            <h2 className="text-3xl font-bold text-[#4FB7B3] dark:text-[#A8FBD3] mb-2">
+            <h2 className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
               Pomodoro Timer
             </h2>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-gray-600 dark:text-gray-300">
               {mode === "focus" ? "Waktune Fokus!" : "Waktune Istirahat"}
             </p>
           </div>
 
           <div className="space-y-4">
-            <div className="text-7xl font-bold text-[#4FB7B3] dark:text-[#A8FBD3] tabular-nums">
+            <div className="text-7xl font-bold text-purple-600 dark:text-purple-400 tabular-nums">
               {formatTime(time)}
             </div>
 
@@ -40,7 +40,7 @@ export function PomodoroTimer() {
             <Button
               onClick={toggleTimer}
               size="lg"
-              className="bg-[#4FB7B3] hover:bg-[#31326F] text-white transition-colors"
+              className="bg-purple-500 hover:bg-purple-600 text-white transition-all duration-300 shadow-lg hover:scale-105"
             >
               {isActive ? (
                 <>
@@ -58,7 +58,7 @@ export function PomodoroTimer() {
               onClick={resetTimer}
               size="lg"
               variant="outline"
-              className="border-[#4FB7B3] text-[#4FB7B3] hover:bg-teal-50 dark:hover:bg-teal-950/20"
+              className="border-purple-400 dark:border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950/30"
             >
               <RotateCcw className="mr-2 h-5 w-5" />
               Reset
@@ -71,8 +71,8 @@ export function PomodoroTimer() {
               variant={mode === "focus" ? "default" : "outline"}
               className={
                 mode === "focus"
-                  ? "bg-[#4FB7B3] hover:bg-[#31326F] text-white transition-colors"
-                  : "border-[#4FB7B3] text-[#4FB7B3] hover:bg-teal-50 dark:hover:bg-teal-950/20"
+                  ? "bg-purple-500 hover:bg-purple-600 text-white transition-all duration-300 shadow-lg"
+                  : "border-purple-400 dark:border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950/30"
               }
             >
               Focus (25:00)
@@ -82,8 +82,8 @@ export function PomodoroTimer() {
               variant={mode === "break" ? "default" : "outline"}
               className={
                 mode === "break"
-                  ? "bg-[#6379AB] hover:bg-[#31326F] text-white transition-colors"
-                  : "border-[#4FB7B3] text-[#4FB7B3] hover:bg-teal-50 dark:hover:bg-teal-950/20"
+                  ? "bg-pink-500 hover:bg-pink-600 text-white transition-all duration-300 shadow-lg"
+                  : "border-purple-400 dark:border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950/30"
               }
             >
               Break (05:00)

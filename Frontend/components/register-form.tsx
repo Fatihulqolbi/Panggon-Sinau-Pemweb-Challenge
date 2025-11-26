@@ -43,7 +43,7 @@ export function RegisterForm() {
   }
 
   return (
-    <Card className="w-full max-w-md bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-teal-200 dark:border-teal-800 shadow-2xl">
+    <Card className="w-full max-w-md bg-white/95 dark:bg-slate-900/80 backdrop-blur-md border-teal-200 dark:border-teal-800 shadow-2xl">
       <CardHeader className="space-y-2 text-center">
         <div className="mx-auto w-16 h-16 bg-[#4FB7B3] rounded-full flex items-center justify-center mb-2">
           <UserPlus className="h-8 w-8 text-white" />

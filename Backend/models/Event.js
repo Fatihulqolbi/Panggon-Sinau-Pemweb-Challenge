@@ -37,8 +37,8 @@ const eventSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ['My Calendar', 'Work', 'Personal', 'Family'],
-    default: 'My Calendar'
+    enum: ['my-calendar', 'work', 'personal', 'family', 'My Calendar', 'Work', 'Personal', 'Family'],
+    default: 'my-calendar'
   },
   color: {
     type: String,

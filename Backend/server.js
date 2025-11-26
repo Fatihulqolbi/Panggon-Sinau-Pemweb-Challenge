@@ -29,6 +29,8 @@ app.use('/api/events', require('./routes/events'));
 app.use('/api/notes', require('./routes/notes'));
 app.use('/api/pomodoro', require('./routes/pomodoro'));
 app.use('/api/stats', require('./routes/stats'));
+app.use('/api/todos', require('./routes/todos')); // Todo/Task Management
+app.use('/api/quotes', require('./routes/quotes')); // Motivational Quotes
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -50,7 +52,9 @@ app.get('/', (req, res) => {
       events: '/api/events',
       notes: '/api/notes',
       pomodoro: '/api/pomodoro',
-      stats: '/api/stats'
+      stats: '/api/stats',
+      todos: '/api/todos',
+      quotes: '/api/quotes'
     }
   });
 });

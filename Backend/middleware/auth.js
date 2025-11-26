@@ -15,11 +15,22 @@ const auth = (req, res, next) => {
     // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     
-    // Add user ID to request
+    // Add user info to request
     req.userId = decoded.userId;
+    req.user = {
+      id: decoded.userId,
+      userId: decoded.userId
+    };
     
     next();
   } catch (error) {
+    if (error.name === 'TokenExpiredError') {
+      return res.status(401).json({
+        success: false,
+        message: 'Token expired',
+        expired: true
+      });
+    }
     res.status(401).json({
       success: false,
       message: 'Token is not valid'

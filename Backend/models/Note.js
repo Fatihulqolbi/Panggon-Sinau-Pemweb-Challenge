@@ -11,10 +11,19 @@ const noteSchema = new mongoose.Schema({
     required: [true, 'Note title is required'],
     trim: true
   },
+  subtitle: {
+    type: String,
+    trim: true
+  },
   content: {
     type: String,
     required: [true, 'Note content is required']
   },
+  images: [{
+    data: Buffer,
+    contentType: String,
+    filename: String
+  }],
   category: {
     type: String,
     enum: ['Study', 'Work', 'Personal', 'Ideas', 'Other'],

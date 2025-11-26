@@ -33,6 +33,7 @@ router.get('/', auth, async (req, res) => {
 // @access  Private
 router.post('/', auth, async (req, res) => {
   try {
+    console.log('Creating event with data:', req.body);
     const event = new Event({
       ...req.body,
       user: req.userId
@@ -46,8 +47,12 @@ router.post('/', auth, async (req, res) => {
       event
     });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ success: false, message: 'Server error' });
+    console.error('Event creation error:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Server error',
+      error: error.message 
+    });
   }
 });
 

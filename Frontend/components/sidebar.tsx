@@ -52,7 +52,7 @@ export function Sidebar() {
       {/* Sidebar */}
       <aside
         className={`
-          fixed top-0 left-0 h-screen w-64 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700
+          fixed top-0 left-0 h-screen w-64 bg-white/95 dark:bg-slate-900/90 backdrop-blur-md border-r border-gray-200 dark:border-gray-700
           transform transition-transform duration-300 ease-in-out z-40
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0

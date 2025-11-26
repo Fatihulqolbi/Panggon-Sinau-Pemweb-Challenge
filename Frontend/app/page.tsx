@@ -1,21 +1,15 @@
 "use client"
 
-import { useAuth } from "@/contexts/auth-context"
-import { AuthPage } from "@/components/auth-page"
-import { DashboardLayout } from "@/components/dashboard-layout"
-import { DashboardHome } from "@/components/dashboard-home"
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
-  const { isAuthenticated } = useAuth()
+  const router = useRouter()
 
-  // Show auth page if not authenticated
-  if (!isAuthenticated) {
-    return <AuthPage />
-  }
+  useEffect(() => {
+    // Redirect to register page
+    router.push('/register')
+  }, [router])
 
-  return (
-    <DashboardLayout>
-      <DashboardHome />
-    </DashboardLayout>
-  )
+  return null
 }

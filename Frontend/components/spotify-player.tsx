@@ -1,18 +1,24 @@
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Music2 } from "lucide-react"
+import Image from "next/image"
 
 export function SpotifyPlayer() {
   return (
-    <Card className="border-teal-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg h-full">
-      <CardHeader className="bg-gradient-to-r from-green-500 to-emerald-500 dark:from-green-600 dark:to-emerald-600 text-white pb-4">
-        <CardTitle className="text-xl flex items-center gap-2">
-          <Music2 className="h-5 w-5" />
+    <Card className="border-purple-300/40 dark:border-purple-700/40 bg-white/90 dark:bg-slate-900/70 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all duration-300 h-full">
+      <CardHeader className="border-b-2 border-pink-300/40 dark:border-pink-700/40 pb-4">
+        <CardTitle className="text-xl flex items-center gap-2 text-pink-600 dark:text-pink-400">
+          <Image 
+            src="/png-clipart-spotify-for-os-x-el-capitan-spotify-logo-thumbnail-removebg-preview.png" 
+            alt="Spotify Logo" 
+            width={24} 
+            height={24}
+            className="h-6 w-6"
+          />
           Spotify Player
         </CardTitle>
       </CardHeader>
-      <CardContent className="pt-4 px-2 dark:bg-gray-800">
+      <CardContent className="pt-4 px-2">
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4t95PAs1EpY?utm_source=generator"

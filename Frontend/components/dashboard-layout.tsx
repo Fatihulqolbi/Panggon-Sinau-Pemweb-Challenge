@@ -2,6 +2,7 @@
 
 import { ReactNode } from "react"
 import { HorizontalNav } from "./horizontal-nav"
+import { PageTransition } from "./page-transition"
 
 interface DashboardLayoutProps {
   children: ReactNode
@@ -9,12 +10,14 @@ interface DashboardLayoutProps {
 
 export function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#A8FBD3]/10 dark:bg-gray-950">
+    <div className="min-h-screen bg-[#A8FBD3]/10">
       <HorizontalNav />
       
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6">
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
       </main>
     </div>
   )

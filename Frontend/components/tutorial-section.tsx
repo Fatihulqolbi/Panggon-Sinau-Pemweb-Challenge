@@ -32,7 +32,7 @@ export function TutorialSection() {
   ]
 
   return (
-    <section className="py-16 bg-[#A8FBD3]/20 dark:bg-gray-900">
+    <section className="py-16 bg-[#A8FBD3]/20 dark:bg-slate-900/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="bg-[#4FB7B3] text-white mb-4">Cara Menggunakan</Badge>
@@ -48,7 +48,7 @@ export function TutorialSection() {
           {steps.map((step, index) => (
             <Card 
               key={index}
-              className="relative border-teal-200 dark:border-teal-800 hover-lift bg-white dark:bg-gray-900"
+              className="relative border-teal-200 dark:border-teal-800 hover-lift bg-white dark:bg-slate-900/60 backdrop-blur-sm"
             >
               <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#4FB7B3] dark:bg-[#6379AB] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
                 {step.number}
@@ -74,7 +74,7 @@ export function TutorialSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <Card className="max-w-3xl mx-auto border-teal-200 dark:border-teal-800 bg-teal-50 dark:bg-gray-900">
+          <Card className="max-w-3xl mx-auto border-teal-200 dark:border-teal-800 bg-teal-50 dark:bg-slate-900/60 backdrop-blur-sm">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-[#31326F] dark:text-[#A8FBD3] mb-4">
                 Teknik Pomodoro

@@ -1,6 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react"
+import { pomodoroAPI } from "@/lib/api"
 
 interface TimerContextType {
   mode: "focus" | "break"
@@ -44,6 +45,15 @@ export function TimerProvider({ children }: { children: ReactNode }) {
         setTime((prevTime) => prevTime - 1)
       }, 1000)
     } else if (time === 0 && isActive) {
+      // Log completed session to database
+      const sessionDuration = mode === "focus" ? 25 : 5;
+      pomodoroAPI.logSession({
+        type: mode,
+        duration: sessionDuration,
+      }).catch(error => {
+        console.error('Failed to log pomodoro session:', error);
+      });
+
       // Play alarm sound
       if (typeof window !== 'undefined') {
         const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()

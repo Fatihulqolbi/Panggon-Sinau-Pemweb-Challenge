@@ -11,7 +11,7 @@ router.get('/', auth, async (req, res) => {
   try {
     const { startDate, endDate, type } = req.query;
     
-    const query = { user: req.userId };
+    const query = { user: req.user.id };
     
     if (type) query.type = type;
     
@@ -41,7 +41,7 @@ router.post('/', auth, async (req, res) => {
   try {
     const session = new PomodoroSession({
       ...req.body,
-      user: req.userId,
+      user: req.user.id,
       completedAt: new Date()
     });
 
@@ -49,7 +49,7 @@ router.post('/', auth, async (req, res) => {
 
     // Update user stats
     if (session.type === 'focus') {
-      await User.findByIdAndUpdate(req.userId, {
+      await User.findByIdAndUpdate(req.user.id, {
         $inc: {
           'stats.totalPomodoros': 1,
           'stats.totalFocusTime': session.duration
@@ -86,7 +86,7 @@ router.get('/stats', auth, async (req, res) => {
     }
 
     const sessions = await PomodoroSession.find({
-      user: req.userId,
+      user: req.user.id,
       completedAt: { $gte: startDate }
     });
 

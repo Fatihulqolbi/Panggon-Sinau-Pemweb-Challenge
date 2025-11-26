@@ -83,6 +83,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setIsAuthenticated(false)
     if (typeof window !== 'undefined') {
       localStorage.removeItem('user')
+      localStorage.removeItem('token')
+      window.location.href = '/login'
     }
   }
 
