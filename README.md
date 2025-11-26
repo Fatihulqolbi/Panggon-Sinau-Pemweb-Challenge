@@ -4,7 +4,8 @@
 
 Panggon Sinau adalah platform produktivitas komprehensif yang menggabungkan berbagai fitur untuk membantu Anda belajar lebih efektif, meningkatkan fokus, mengelola jadwal, dan menyimpan catatan penting. Dengan integrasi penuh ke database MongoDB, semua data Anda tersimpan aman dan tersinkronisasi.
 
-> 📸 **Screenshot Diperlukan**: Tambahkan screenshot halaman dashboard utama di sini (`docs/screenshots/dashboard.png`)
+> <img width="1423" height="896" alt="image" src="https://github.com/user-attachments/assets/99b844e6-4d8c-4ae2-9573-6608c23cbde3" />
+
 
 ---
 
@@ -27,8 +28,9 @@ Teknik produktivitas Pomodoro dengan tracking otomatis ke database.
 3. Istirahat 5 menit ketika timer selesai
 4. Ulangi 4 kali untuk 1 siklus penuh
 
-> 📸 **Screenshot Diperlukan**: Pomodoro timer dalam mode fokus (`docs/screenshots/pomodoro-focus.png`)
-> 📸 **Screenshot Diperlukan**: Pomodoro timer dalam mode break (`docs/screenshots/pomodoro-break.png`)
+> <img width="459" height="394" alt="image" src="https://github.com/user-attachments/assets/bd2c91e7-2777-4607-9968-057f03a963ce" />
+
+> <img width="451" height="395" alt="image" src="https://github.com/user-attachments/assets/2428f7fa-3c87-43c2-85a8-cdf8190af97b" />
 
 ---
 
@@ -54,8 +56,9 @@ Kelola jadwal dan event dengan sistem kalender terintegrasi database.
 3. Event otomatis tersimpan ke database
 4. Klik event untuk edit atau delete
 
-> 📸 **Screenshot Diperlukan**: Halaman kalender dengan events (`docs/screenshots/calendar-view.png`)
-> 📸 **Screenshot Diperlukan**: Modal create/edit event (`docs/screenshots/calendar-modal.png`)
+> <img width="512" height="742" alt="image" src="https://github.com/user-attachments/assets/2857003f-2348-40f4-9516-960c0ebf70a4" />
+
+> <img width="1371" height="763" alt="image" src="https://github.com/user-attachments/assets/cdf90fdd-8ad8-49c5-ab5d-c4befbadb2a5" />
 
 ---
 
@@ -79,9 +82,12 @@ Editor catatan bergaya Medium dengan dukungan gambar hingga 5 file.
 5. Klik Save - tersimpan otomatis ke database
 6. Klik note untuk view detail atau edit
 
-> 📸 **Screenshot Diperlukan**: Halaman notes dengan daftar notes (`docs/screenshots/notes-list.png`)
-> 📸 **Screenshot Diperlukan**: Editor notes dengan gambar (`docs/screenshots/notes-editor.png`)
-> 📸 **Screenshot Diperlukan**: Detail view notes (`docs/screenshots/notes-detail.png`)
+> <img width="1459" height="852" alt="image" src="https://github.com/user-attachments/assets/30087218-42b9-42eb-ab89-cda424c79732" />
+
+> <img width="946" height="837" alt="image" src="https://github.com/user-attachments/assets/82a2d22f-6357-4abc-85e0-0c5c049fa0df" />
+
+> <img width="1430" height="764" alt="image" src="https://github.com/user-attachments/assets/adf55de3-c7ad-4617-a309-05b56cf5c8e7" />
+
 
 ---
 
@@ -105,8 +111,7 @@ Dashboard statistik produktivitas dengan data real-time dari database.
 - Reset jika tidak ada aktivitas di hari sebelumnya
 - Visual calendar menunjukkan hari aktif
 
-> 📸 **Screenshot Diperlukan**: Dashboard statistik lengkap (`docs/screenshots/statistics-dashboard.png`)
-> 📸 **Screenshot Diperlukan**: Charts dan streak calendar (`docs/screenshots/statistics-charts.png`)
+> <img width="1415" height="825" alt="image" src="https://github.com/user-attachments/assets/8d58adeb-ecb5-4208-9afd-4b878098da5b" />
 
 ---
 
@@ -128,7 +133,7 @@ Main catur untuk refresh otak di break time.
   - Move history log
 - 🎨 Beautiful chess board dengan animasi
 
-> 📸 **Screenshot Diperlukan**: Game catur sedang berlangsung (`docs/screenshots/chess-game.png`)
+> <img width="1405" height="642" alt="image" src="https://github.com/user-attachments/assets/c172059a-b8d7-4b1f-b1cb-ddd211662e3b" />
 
 ---
 
@@ -150,8 +155,10 @@ Quotes inspiratif dengan foto untuk motivasi.
 4. Simpan - otomatis ke database
 5. Navigate dengan arrow buttons
 
-> 📸 **Screenshot Diperlukan**: Quotes carousel di dashboard (`docs/screenshots/quotes-display.png`)
-> 📸 **Screenshot Diperlukan**: Form add/edit quote (`docs/screenshots/quotes-form.png`)
+> <img width="1371" height="570" alt="image" src="https://github.com/user-attachments/assets/b471f479-c5c2-467b-8f5c-87aad492eabd" />
+
+> <img width="835" height="627" alt="image" src="https://github.com/user-attachments/assets/cca40ac4-f103-408b-917b-ec2b93618c1f" />
+
 
 ---
 
@@ -219,7 +226,7 @@ Full dark mode support dengan background tetap terlihat.
 - ✍️ Notes: cozy-room.mp4
 - 👤 Profile: anime-style-clouds.jpg
 
-> 📸 **Screenshot Diperlukan**: Perbandingan light vs dark mode (`docs/screenshots/dark-mode-comparison.png`)
+> <img width="1476" height="870" alt="image" src="https://github.com/user-attachments/assets/9fadcf79-43c4-4532-921e-526081515123" />
 
 ---
 
@@ -1809,69 +1816,6 @@ railway up
 mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/panggon-sinau?retryWrites=true&w=majority
 ```
 
----
-
-## 📸 Screenshots Guide
-
-Untuk dokumentasi lengkap, tambahkan screenshot di folder `docs/screenshots/`:
-
-### Daftar Screenshot yang Diperlukan:
-
-1. **Dashboard** (`dashboard.png`)
-   - Full view dashboard dengan pomodoro, todo, quotes
-   
-2. **Pomodoro Timer** 
-   - `pomodoro-focus.png` - Timer dalam mode fokus
-   - `pomodoro-break.png` - Timer dalam mode break
-
-3. **Calendar**
-   - `calendar-view.png` - Monthly view dengan events
-   - `calendar-modal.png` - Create/Edit event modal
-
-4. **Notes**
-   - `notes-list.png` - Grid view notes
-   - `notes-editor.png` - Editor dengan gambar
-   - `notes-detail.png` - Detail view note
-
-5. **Statistics**
-   - `statistics-dashboard.png` - Full dashboard dengan charts
-   - `statistics-charts.png` - Close-up charts & streak
-
-6. **Chess Game**
-   - `chess-game.png` - Game sedang berlangsung
-
-7. **Quotes**
-   - `quotes-display.png` - Carousel quotes
-   - `quotes-form.png` - Add/Edit form
-
-8. **To-Do List**
-   - `todo-list.png` - List dengan berbagai kategori
-
-9. **Spotify Player**
-   - `spotify-player.png` - UI player
-
-10. **Profile**
-    - `register-page.png` - Registrasi dengan upload foto
-    - `profile-page.png` - Profile management
-
-11. **Dark Mode**
-    - `dark-mode-comparison.png` - Side-by-side comparison
-
-### Cara Menambahkan Screenshot:
-
-```bash
-# Create folder
-mkdir -p docs/screenshots
-
-# Add screenshot files
-# Rename sesuai nama di atas
-
-# Update README.md dengan path yang benar
-# ![Dashboard](docs/screenshots/dashboard.png)
-```
-
----
-
 ## 🤝 Contributing
 
 Kontribusi sangat diterima! Ikuti langkah berikut:
@@ -2013,10 +1957,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-**Selamat belajar dan bekerja produktif! 🚀**
-
-*"Panggon Sinau - Tempat belajar yang produktif dan menyenangkan"*
-
----
-
-**Built with ❤️ using Next.js 15, React 19, Express.js & MongoDB**
