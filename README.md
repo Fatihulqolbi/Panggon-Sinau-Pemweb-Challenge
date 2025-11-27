@@ -1941,8 +1941,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@Fatihulqolbi](https://github.com/Fatihulqolbi)
+- Email: Fatihulqolbi@gmail.com
 
 ---
 
